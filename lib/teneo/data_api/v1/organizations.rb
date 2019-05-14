@@ -2,6 +2,7 @@
 
 module Teneo::DataApi::V1
   class Organizations < Grape::API
+    include Teneo::DataApi::V1::Defaults
 
     resource :organizations do
 
