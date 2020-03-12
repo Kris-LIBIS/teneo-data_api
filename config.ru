@@ -9,5 +9,7 @@ require File.expand_path('config/environment', __dir__)
 # end
 #
 # NewRelic::Agent.manual_start
+require 'active_record'
+use ActiveRecord::ConnectionAdapters::ConnectionManagement
 
 run Teneo::DataApi::App.instance
